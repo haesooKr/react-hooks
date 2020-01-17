@@ -1,21 +1,18 @@
 import React from 'react';
-import useTitle from './hooks/useTitle';
+import useClick from './hooks/useClick';
 
 
 function App() {
-  const titleUpdate = useTitle('Loading...');
-  const time = async () => {
-    console.log('timer start')
-    await setTimeout(() => {
-      titleUpdate('Haesoo')
-      console.log('title changed');
-    }, 5000);
-  }
+  const sayHello = () => console.log("say hello");
+  const sayHi = () => console.log("say hi");
+  const h1 = useClick(sayHello);
+  const h2 = useClick(sayHi)
   return (
     <div className="App">
-      <button onClick={() => time()}>Title</button>
+      <h1 ref={h1}>Hello</h1>
+      <h2 ref={h2}>Hi</h2>
     </div>
-  );
+  )
 }
 
 export default App;
