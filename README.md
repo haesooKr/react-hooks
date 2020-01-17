@@ -3,11 +3,10 @@
 - [X] useInput
 - [X] useTabs
 - [X] useTitle
-- [X] usePageLeave
-- [ ] useClick
+- [X] useClick
+- [ ] usePageLeave
 - [ ] useFadeIn
 - [ ] useFullscreen
-- [ ] useHover
 - [ ] useNetwork
 - [ ] useNotification
 - [ ] useScroll
