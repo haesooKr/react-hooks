@@ -1,6 +1,6 @@
 # Hooks
 
-- [ ] useInput
+- [X] useInput
 - [ ] useTitle
 - [ ] usePageLeave
 - [ ] useClick
