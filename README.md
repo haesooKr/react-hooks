@@ -1,6 +1,7 @@
 # Hooks
 
 - [X] useInput
+- [X] useTabs
 - [ ] useTitle
 - [ ] usePageLeave
 - [ ] useClick
@@ -10,7 +11,6 @@
 - [ ] useNetwork
 - [ ] useNotification
 - [ ] useScroll
-- [ ] useTabs
 - [ ] usePreventLeave
 - [ ] useConfirm
 - [ ] useAxios
