@@ -7,9 +7,9 @@
 - [X] useConfirm
 - [X] usePreventLeave
 - [X] useBeforeLeave
-- [ ] useFadeIn
-- [ ] useFullscreen
+- [X] useFadeIn
 - [ ] useNetwork
+- [ ] useFullscreen
 - [ ] useNotification
 - [ ] useScroll
 - [ ] useAxios
