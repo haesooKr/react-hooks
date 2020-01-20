@@ -8,8 +8,8 @@
 - [X] usePreventLeave
 - [X] useBeforeLeave
 - [X] useFadeIn
-- [ ] useNetwork
+- [X] useNetwork
+- [X] useScroll
 - [ ] useFullscreen
 - [ ] useNotification
-- [ ] useScroll
 - [ ] useAxios
