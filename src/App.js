@@ -1,12 +1,12 @@
 import React from 'react';
-import useScroll from './hooks/useScroll';
+import useNotification from './hooks/useNotification';
 
 
 function App() {
-  const { y } = useScroll();
+  const triggerNotification = useNotification("Can I have your name?", { body: "Hello Haesoo" });
   return (
-    <div className="App" style={{ height: "1000vh"}}>
-      <h1 style={{ position: "fixed", color: y > 100 ? "red" : "blue" }}>Hi</h1>
+    <div className="App">
+      <button onClick={triggerNotification}>Hello</button>
     </div>
   )
 }
