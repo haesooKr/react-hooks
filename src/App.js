@@ -1,12 +1,15 @@
 import React from 'react';
-import useNotification from './hooks/useNotification';
+import useAxios from './hooks/useAxios';
 
 
 function App() {
-  const triggerNotification = useNotification("Can I have your name?", { body: "Hello Haesoo" });
+  const {loading, error, data, refetch} = useAxios({url: "https://yts.lt/api/v2/list_movies.json"})
+  console.log(`Loading: ${loading}\nError: ${error}\nData: ${JSON.stringify(data)}\n`);
   return (
     <div className="App">
-      <button onClick={triggerNotification}>Hello</button>
+      <h1>{data && data.status}</h1>
+      <h2>{loading && "Loading"}</h2>
+      <button onClick={refetch}>Refetch</button>
     </div>
   )
 }
